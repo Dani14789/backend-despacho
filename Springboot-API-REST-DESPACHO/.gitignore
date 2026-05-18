@@ -3,6 +3,7 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+
 .env
 
 ### STS ###
@@ -13,14 +14,12 @@ target/
 .settings
 .springBeans
 .sts4-cache
-.DS_Store
 
 ### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
 *.ipr
-*.class
 
 ### NetBeans ###
 /nbproject/private/
@@ -31,7 +30,6 @@ target/
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
-node_modules/
 
 ### VS Code ###
 .vscode/
