@@ -21,8 +21,8 @@ jobs:
       - name: Build y Push imagen Backend
         uses: docker/build-push-action@v5
         with:
-          context: .
-          dockerfile: ./Dockerfile
+          context: ./Springboot-API-REST-DESPACHO
+          dockerfile: ./Springboot-API-REST-DESPACHO/Dockerfile
           target: production
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/innovatech-backend-despachos:latest
