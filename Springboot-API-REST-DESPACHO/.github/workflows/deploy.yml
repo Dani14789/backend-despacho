@@ -8,6 +8,7 @@ on:
 jobs:
   build-push-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout codigo
         uses: actions/checkout@v4
@@ -22,7 +23,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ./Springboot-API-REST-DESPACHO
-          dockerfile: ./Springboot-API-REST-DESPACHO/Dockerfile
+          file: ./Springboot-API-REST-DESPACHO/Dockerfile
           target: production
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/innovatech-backend-despachos:latest
